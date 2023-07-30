@@ -22,3 +22,14 @@ To store objects (earlier version)
 
  New command:
  JSON.set animal $ '"dog"'
+
+
+
+ -------------------------
+ set name abhi
+expire name 2  //(integer) 1
+ttl name //1
+ttl name // 0
+ttl name // -2 (min response)
+ttl name //-2
+ 
